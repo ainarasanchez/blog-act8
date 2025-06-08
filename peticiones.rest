@@ -1,0 +1,2 @@
+### Comprobación de conexión a la BBDD
+GET http://localhost:3000/api/check-db
