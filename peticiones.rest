@@ -1,2 +1,27 @@
 ### Comprobación de conexión a la BBDD
 GET http://localhost:3000/api/check-db
+
+### GET /api/posts
+GET http://localhost:3000/api/posts
+
+### POST /api/posts
+POST http://localhost:3000/api/posts
+Content-Type: application/json
+
+{
+  "title": "Post de prueba",
+  "description": "Contenido de ejemplo"
+}
+
+### GET /api/authors
+GET http://localhost:3000/api/authors
+
+### POST /api/authors
+POST http://localhost:3000/api/authors
+Content-Type: application/json
+
+{
+  "name": "Autor prueba",
+  "email": "autor@correo.com",
+  "image": "https://imagen.com/foto.jpg"
+}
