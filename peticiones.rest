@@ -2,3 +2,14 @@
 
 ### 
 GET {{host}}/api/posts
+
+###
+POST {{host}}/api/posts
+Content-Type: application/json
+
+{
+  "title": "Mi primer post",
+  "description": "Contenido de ejemplo",
+  "category": "nodejs",
+  "author_id": 1
+}
