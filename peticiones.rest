@@ -13,3 +13,16 @@ Content-Type: application/json
   "category": "nodejs",
   "author_id": 1
 }
+
+###
+GET {{host}}/api/authors
+
+###
+POST {{host}}/api/authors
+Content-Type: application/json
+
+{
+  "name": "Juan",
+  "email": "juan@email.com",
+  "image": "https://example.com/juan.jpg"
+}
