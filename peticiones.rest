@@ -8,10 +8,10 @@ POST {{host}}/api/posts
 Content-Type: application/json
 
 {
-  "title": "Mi primer post",
-  "description": "Contenido de ejemplo",
-  "category": "nodejs",
-  "author_id": 1
+  "title": "Diseño de bases de datos relacionales",
+  "description": "Claves primarias, foráneas y normalización.",
+  "category": "database",
+  "author_id": 3
 }
 
 ###
