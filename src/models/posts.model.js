@@ -10,7 +10,17 @@ const insert = async ({ title, description, category, author_id }) => {
     return result;
   };
 
+const getByAuthor = async (authorId) => {
+  const [result] = await db.query(`
+    SELECT posts.*, authors.name AS author_name, authors.email, authors.image
+    FROM posts
+    JOIN authors ON posts.author_id = authors.id
+    WHERE authors.id = ?
+  `, [authorId]);
+  return result;
+};
+
 
 module.exports = {
-    selectAll, insert
+    selectAll, insert, getByAuthor
 }
