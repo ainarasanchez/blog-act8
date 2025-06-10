@@ -10,4 +10,10 @@ const create = async (req, res) => {
     res.json(result);
 }
 
-module.exports = { getAll, create };
+const getByAuthor = async (req, res) => {
+    const authorId = req.params.authorId;
+    const posts = await Post.getByAuthor(authorId);
+    res.json(posts);
+  };
+
+module.exports = { getAll, create, getByAuthor };
