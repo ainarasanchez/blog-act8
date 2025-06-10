@@ -5,4 +5,9 @@ const getAll = async (req, res) => {
     res.json(posts);
 }
 
-module.exports = { getAll };
+const create = async (req, res) => {
+    const result = await Post.insert(req.body);
+    res.json(result);
+}
+
+module.exports = { getAll, create };
