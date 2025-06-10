@@ -26,3 +26,6 @@ Content-Type: application/json
   "email": "juan@email.com",
   "image": "https://example.com/juan.jpg"
 }
+
+###
+GET {{host}}/api/authors/1/posts
